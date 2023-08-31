@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Algoritmos-e-Estruturas-de-Dados/1.0.0": {
+        "runtime": {
+          "Algoritmos-e-Estruturas-de-Dados.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Algoritmos-e-Estruturas-de-Dados/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

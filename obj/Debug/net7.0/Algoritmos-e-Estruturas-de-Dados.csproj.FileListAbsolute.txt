@@ -1,0 +1,25 @@
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.csproj.AssemblyReference.cache
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.AssemblyInfoInputs.cache
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.AssemblyInfo.cs
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.csproj.CoreCompileInputs.cache
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\bin\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.exe
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\bin\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.deps.json
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\bin\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.runtimeconfig.json
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\bin\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.dll
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\bin\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.pdb
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.dll
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\refint\Algoritmos-e-Estruturas-de-Dados.dll
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.pdb
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.genruntimeconfig.cache
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\ref\Algoritmos-e-Estruturas-de-Dados.dll
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\Downloads\Algoritmos-e-Estruturas-de-Dados.exe
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\Downloads\Algoritmos-e-Estruturas-de-Dados.deps.json
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\Downloads\Algoritmos-e-Estruturas-de-Dados.runtimeconfig.json
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\Downloads\Algoritmos-e-Estruturas-de-Dados.dll
+C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\Downloads\Algoritmos-e-Estruturas-de-Dados.pdb
+C:\Users\igorl\OneDrive\Área de Trabalho\Algoritmos-e-Estruturas-de-Dados.exe
+C:\Users\igorl\OneDrive\Área de Trabalho\Algoritmos-e-Estruturas-de-Dados.deps.json
+C:\Users\igorl\OneDrive\Área de Trabalho\Algoritmos-e-Estruturas-de-Dados.runtimeconfig.json
+C:\Users\igorl\OneDrive\Área de Trabalho\Algoritmos-e-Estruturas-de-Dados.dll
+C:\Users\igorl\OneDrive\Área de Trabalho\Algoritmos-e-Estruturas-de-Dados.pdb
