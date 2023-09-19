@@ -14,26 +14,8 @@ namespace EXE_3
         {
             this.codigo = codigo;
             this.ano = ano;
-        
 
-        public int GetCodigo()
-        {
-            return codigo;
-        }
 
-        public void SetCodigo(int novoCodigo)
-        {
-            codigo = novoCodigo;
-        }
-
-        public int GetAno()
-        {
-            return ano;
-        }
-
-        public void SetAno(int novoAno)
-        {
-            ano = novoAno;
         }
     }
 }

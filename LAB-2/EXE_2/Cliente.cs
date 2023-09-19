@@ -3,8 +3,6 @@ using System;
 
 namespace EXE_2
 {
-    using System;
-
     class Cliente
     {
         private int codigo;
