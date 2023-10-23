@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Diagnostics.Contracts;
 using System.Security.Cryptography.X509Certificates;
 
@@ -18,7 +18,7 @@ namespace Lab_5{
 
             Console.WriteLine($"o resultado é {Tribonacci(0)}");
         }
-        public static int Soma(int limite){
+        public static int Soma(int limite){////////////////////////////////////  1
             if(limite==1){
                 return 1;
             }
@@ -27,14 +27,14 @@ namespace Lab_5{
             }
         }
 
-        public static dynamic ImprimeSequencia(int limite, int comeco){
+        public static dynamic ImprimeSequencia(int limite, int comeco){//////////////////////////// 2
             if(comeco==limite){
                 return comeco.ToString();
             }else{
                 return comeco.ToString()+","+ImprimeSequencia(limite, ++comeco);
             }
         }
-        public static int RetornaMaior(int[] vet, int tamanho){
+        public static int RetornaMaior(int[] vet, int tamanho){//////////////////////////// 3
             if(tamanho==0){
                 return vet[0];
             }else if(vet[tamanho]>vet[tamanho-1]){
@@ -43,7 +43,14 @@ namespace Lab_5{
                 return RetornaMaior(vet, --tamanho);
             }
         }
-            public static int Tribonacci(int n)//5
+        public static int RetornaNegativo(int[] vet, int tamanho){ //////////////////////////// 4
+            if(tamanho==0){
+                return (vet[0]<0)? 1 : 0;
+            }else{
+                return (vet[tamanho]<0? 1 : 0)+RetornaNegativo(vet, --tamanho);
+            }
+        }
+            public static int Tribonacci(int n)//////////////////////////////// 5
             {
             if(n==0){
                 return 0;
@@ -53,10 +60,11 @@ namespace Lab_5{
                 return 1;
             }else{
                 return Tribonacci(n-1)+Tribonacci(n-2)+Tribonacci(n-3);
-            }//4 //3 //2
+            }
         
 
             }
 
         }
     }
+*/

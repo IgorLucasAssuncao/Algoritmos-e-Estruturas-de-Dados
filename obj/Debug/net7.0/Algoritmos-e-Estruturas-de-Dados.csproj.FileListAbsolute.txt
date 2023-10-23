@@ -1,4 +1,3 @@
-C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.csproj.AssemblyReference.cache
 C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.AssemblyInfoInputs.cache
 C:\Users\igorl\OneDrive\Documentos\GitHub\Algoritmos-e-Estruturas-de-Dados\obj\Debug\net7.0\Algoritmos-e-Estruturas-de-Dados.AssemblyInfo.cs
