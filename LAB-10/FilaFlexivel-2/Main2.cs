@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Collections.Generic;
 namespace Lab_10_2
 {
@@ -67,3 +67,4 @@ namespace Lab_10_2
         }
     }
 }
+*/
