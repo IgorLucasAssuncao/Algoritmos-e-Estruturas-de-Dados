@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 
 namespace FilaVetor
@@ -128,7 +128,7 @@ namespace FilaVetor
             string entrada = "";
             int opcao = 0;
             bool control = true;
-            Fila fila = Fila(10);
+            Fila fila = new Fila(10);
 
             for (int i = 1; i < 11; i++)
             {
@@ -191,3 +191,4 @@ namespace FilaVetor
 
 
 
+*/
