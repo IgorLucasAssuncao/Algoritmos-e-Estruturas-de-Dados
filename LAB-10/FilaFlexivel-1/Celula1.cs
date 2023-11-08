@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 namespace Lab_10{
     class Cel{
@@ -27,3 +27,4 @@ namespace Lab_10{
 	}
     }
 }
+*/

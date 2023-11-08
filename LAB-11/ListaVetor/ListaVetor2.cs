@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 namespace ListaVetor2
 {
@@ -296,3 +296,4 @@ namespace ListaVetor2
         }
     }
 }
+*/

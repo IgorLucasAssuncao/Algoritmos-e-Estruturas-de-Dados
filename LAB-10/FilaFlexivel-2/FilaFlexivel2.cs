@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 namespace Lab_10_2
 {
@@ -110,3 +110,4 @@ namespace Lab_10_2
         }
     }
 }
+*/

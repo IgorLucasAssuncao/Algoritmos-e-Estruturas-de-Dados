@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 namespace ListaNativa2
 {
@@ -155,3 +155,4 @@ namespace ListaNativa2
         }
     }
 }
+*/
