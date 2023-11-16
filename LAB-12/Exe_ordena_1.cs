@@ -36,7 +36,7 @@ namespace Ordena1
                                     array[i] = rd.Next(0, 101);
                                 }
 
-                                Selecao(array, n);
+                                quicksort(array, 0, array.Length-1);
 
                                 Console.WriteLine("Vetor ordenado:");
                                 for (int i = 0; i < n; i++)
@@ -54,7 +54,7 @@ namespace Ordena1
                                 {
                                     array[i] = rd.Next(0, 101);
                                 }
-                                SelecaoDecrescente(array, n);
+                                quicksortDecrescente(array, 0, array.Length-1);
                                 Console.WriteLine("Vetor ordenado:");
                                 for (int i = 0; i < n; i++)
                                 {
@@ -71,118 +71,10 @@ namespace Ordena1
                             Console.WriteLine("Erro: " + e.Message);
                         }
                         break;
-
-                    case 'b':
-                        try
-                        {
-                            Random rd = new Random();
-                            MenuOpcao();
-                            char option2 = char.Parse(Console.ReadLine() ?? "0");
-                            if (option2 == 'a')
-                            {
-                                Console.WriteLine("Insira o tamanho do vetor:");
-                                int n = int.Parse(Console.ReadLine() ?? "0");
-                                int[] array = new int[n];
-                                Console.WriteLine("Insira os elementos do vetor:");
-                                for (int i = 0; i < n; i++)
-                                {
-                                    array[i] = rd.Next(0, 101);
-                                }
-
-                                Insercao(array, n);
-
-                                Console.WriteLine("Vetor ordenado:");
-                                for (int i = 0; i < n; i++)
-                                {
-                                    Console.WriteLine(array[i]);
-                                }
-                            }
-                            else if (option2 == 'b')
-                            {
-                                Console.WriteLine("Insira o tamanho do vetor:");
-                                int n = int.Parse(Console.ReadLine() ?? "0");
-                                int[] array = new int[n];
-                                Console.WriteLine("Insira os elementos do vetor:");
-                                for (int i = 0; i < n; i++)
-                                {
-                                    array[i] = rd.Next(0, 101);
-                                }
-                                InsercaoDecrescente(array, n);
-                                Console.WriteLine("Vetor ordenado:");
-                                for (int i = 0; i < n; i++)
-                                {
-                                    Console.WriteLine(array[i]);
-                                }
-                            }
-                            else
-                            {
-                                throw new Exception("Opção inválida!");
-                            }
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine("Erro: " + e.Message);
-                        }
-                        break;
-
-                    case 'c':
-                        try
-                        {
-                            Random rd = new Random();
-                            MenuOpcao();
-                            char option2 = char.Parse(Console.ReadLine() ?? "0");
-                            if (option2 == 'a')
-                            {
-                                Console.WriteLine("Insira o tamanho do vetor:");
-                                int n = int.Parse(Console.ReadLine() ?? "0");
-                                int[] array = new int[n];
-                                Console.WriteLine("Insira os elementos do vetor:");
-                                for (int i = 0; i < n; i++)
-                                {
-                                    array[i] = rd.Next(0, 101);
-                                }
-
-                                Bublesort(array, n);
-
-                                Console.WriteLine("Vetor ordenado:");
-                                for (int i = 0; i < n; i++)
-                                {
-                                    Console.WriteLine(array[i]);
-                                }
-                            }
-                            else if (option2 == 'b')
-                            {
-                                Console.WriteLine("Insira o tamanho do vetor:");
-                                int n = int.Parse(Console.ReadLine() ?? "0");
-                                int[] array = new int[n];
-                                Console.WriteLine("Insira os elementos do vetor:");
-                                for (int i = 0; i < n; i++)
-                                {
-                                    array[i] = rd.Next(0, 101);
-                                }
-                                BublesortDecrescente(array, n);
-                                Console.WriteLine("Vetor ordenado:");
-                                for (int i = 0; i < n; i++)
-                                {
-                                    Console.WriteLine(array[i]);
-                                }
-                            }
-                            else
-                            {
-                                throw new Exception("Opção inválida!");
-                            }
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine("Erro: " + e.Message);
-                        }
-                        break;
-
                     case 'd':
-                        Console.WriteLine("Programa encerrado!");
+                        Console.WriteLine("Encerrando o programa...");
                         continuar = false;
                         break;
-
                     default:
                         Console.WriteLine("Opção inválida!");
                         break;
@@ -192,9 +84,7 @@ namespace Ordena1
         static void Menu()
         {
             Console.WriteLine("Insira uma das opções abaixo:");
-            Console.WriteLine("a) Algoritmo Seleção");
-            Console.WriteLine("b) Algoritmo da Bolha (Bubblesort)");
-            Console.WriteLine("c) Algoritmo de Inserção");
+            Console.WriteLine("a) Algoritmo Quicsksort:");
             Console.WriteLine("d) Encerrar o programa");
         }
 
@@ -205,100 +95,68 @@ namespace Ordena1
             Console.WriteLine("a) Sim");
             Console.WriteLine("b) Não");
         }
-        static void Bublesort(int[] array, int n)
+        private static void quicksort(int[] array, int esq, int dir)
         {
-            for (int i = (n - 1); i > 0; i--)
+            int part;
+            if (esq < dir)
             {
-                for (int j = 0; j < i; j++)
-                {
-                    if (array[j] > array[j + 1])
-                    {
+                part = particao(array, esq, dir/2);
+             quicksort(array, esq, part - 1);
+                quicksort(array, part + 1, dir);
+            }
+        }
 
-                        int temp = array[j];
-                        array[j] = array[j + 1];
-                        array[j + 1] = temp;
-                    }
-                }
-            }
-        }
-        static void BublesortDecrescente(int[] array, int n)
+        private static int particao(int[] array, int inicio, int fim)
         {
-            for (int i = (n - 1); i > 0; i--)
+            int pivot = array[fim];
+            int part = inicio - 1;
+            for (int i = inicio; i < fim; i++)
             {
-                for (int j = 0; j < i; j++)
+                if (array[i] < pivot)
                 {
-                    if (array[j] < array[j + 1])
-                    {
-                        int temp = array[j];
-                        array[j] = array[j + 1];
-                        array[j + 1] = temp;
-                    }
+                    part++;
+                    swap(array, part, i);
                 }
+            
             }
+                part++;
+                swap(array, part, fim);
+                return (part);
         }
-        static void Insercao(int[] array, int n)
-        {
-            for (int i = 1; i < n; i++)
+             private static void swap(int[] array, int i, int j)
             {
-                int tmp = array[i];
-                int j = i - 1;
 
-                while ((j >= 0) && (array[j] > tmp))
-                {
-                    array[j + 1] = array[j];
-                    j--;
-                }
-                array[j + 1] = tmp;
-            }
-        }
-        static void InsercaoDecrescente(int[] array, int n)
-        {
-            for (int i = 1; i < n; i++)
-            {
-                int tmp = array[i];
-                int j = i - 1;
-
-                while ((j >= 0) && (array[j] < tmp))
-                {
-                    array[j + 1] = array[j];
-                    j--;
-                }
-                array[j + 1] = tmp;
-            }
-        }
-        static void Selecao(int[] array, int n)
-        {
-            for (int i = 0; i < (n - 1); i++)
-            {
-                int menor = i;
-                for (int j = (i + 1); j < n; j++)
-                {
-                    if (array[menor] > array[j])
-                    {
-                        menor = j;
-                    }
-                }
                 int temp = array[i];
-                array[i] = array[menor];
-                array[menor] = temp;
+                array[i] = array[j];
+                array[j] = temp;
+            }
+            private static void quicksortDecrescente(int[] array, int esq, int dir)
+        {
+            int part;
+            if (esq < dir)
+            {
+                part = particaoDecrescente(array, esq, dir);
+                quicksortDecrescente(array, esq, part - 1);
+                quicksortDecrescente(array, part + 1, dir);
             }
         }
-        static void SelecaoDecrescente(int[] array, int n)
+
+        private static int particaoDecrescente(int[] array, int inicio, int fim)
         {
-            for (int i = 0; i < (n - 1); i++)
+            int pivot = array[fim];
+            int part = inicio - 1;
+            for (int i = inicio; i < fim; i++)
             {
-                int maior = i;
-                for (int j = (i + 1); j < n; j++)
+                if (array[i] > pivot)
                 {
-                    if (array[maior] < array[j])
-                    {
-                        maior = j;
-                    }
+                    part++;
+                    swap(array, part, i);
                 }
-                int temp = array[i];
-                array[i] = array[maior];
-                array[maior] = temp;
+            
             }
+                part++;
+                swap(array, part, fim);
+                return (part);
         }
     }
 }
